@@ -118,7 +118,7 @@ int main()
    
     int opcao=0; //Definindo variaveis 
    
-    while(1) 
+    while(1)
     {
         system("cls");
 	     	 
@@ -126,10 +126,11 @@ int main()
 	    printf("Escolha a opção desejada do menu\n\n");   
         printf("\t1 - Registrar nomes \n");
         printf("\t2 - Consultar nomes\n");
-        printf("\t3 - Deletar nomes\n\n");       
+		printf("\t3 - Deletar nomes\n\n");  
+		printf("\t4 - Sair do sistema\n\n");    
         printf("opção: ");//fim do menu
-        
-	    scanf("%d", &opcao); //armazenamento a escolha do usuário 
+	    
+		scanf("%d", &opcao); //armazenamento a escolha do usuário 
 
         system("cls");
 
@@ -145,8 +146,13 @@ int main()
 		    
 		    case 3:
 		    deletar();
-		    break;		    		
-		
+		    break;
+		    
+		    case 4:
+		    printf("Obrigado por utilizar o sistema!\n");
+		    return 0;
+		    break;
+		    
 		    default:
 		    printf("Essa opçao não está disponivel!\n");
             system("pause");
@@ -154,4 +160,4 @@ int main()
 			//fim da seleção
 		}    
     } 
-}
+}        
